@@ -39,8 +39,9 @@
 
     }
     .blogpost{
-        width:60%;
-        margin-left:40px;
+        width:50%;
+        margin-left:120px;
+        margin-right: 40px;
     }
     
 }
@@ -299,7 +300,7 @@ input{
   
   .sidenav {
     
-    width: 30%;
+    width: 25%;
     
     z-index: 1;
     top: 0;
@@ -309,6 +310,7 @@ input{
     padding-top: 20px;
     float:left;
     margin:40px;
+    display:block;
   }
 
   .blogpost{
