@@ -327,5 +327,11 @@ input{
     opacity: 95%;
     border-radius: 5px;
     float:left;
+    font-size:larger;
     
+    
+  }
+
+  .recipe_step{
+      font-size:xx-large;
   }
