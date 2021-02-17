@@ -19,6 +19,10 @@
     .blogpost{
         width:100%;
     }
+
+    .subscribe{
+        background-attachment:scroll;
+    }
 }
   /* Masonry on desktop */
   @media only screen and (min-width:600px) {
@@ -43,7 +47,9 @@
         margin-left:120px;
         margin-right: 40px;
     }
-    
+    .subscribe{
+        background-attachment: fixed;
+    }
 }
 
 .text-primary{
@@ -231,7 +237,7 @@ h1{
     padding:10px;
 
     background-image: url(/images/pizza.jpg);
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
