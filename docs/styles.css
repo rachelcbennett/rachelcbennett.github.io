@@ -31,7 +31,7 @@
       column-count: 4;
     }
     .shortcut{
-        width:30%;
+        width:22%;
   }
     .recipe{
         width:75%;
@@ -62,7 +62,7 @@
 }
 .container{
 
-    width:75%;
+    width:85%;
     position:relative;
     z-index: 1;
     background-color:rgb(255, 255, 255);
@@ -102,8 +102,8 @@ h2{
 
 .shortcut{
     
-    margin: 1.5%;
-    padding: 1.5%;
+    margin: 1%;
+    padding: 1%;
     float:left;
 }
 .shortcut:hover{
@@ -334,4 +334,12 @@ input{
 
   .recipe_step{
       font-size:xx-large;
+  }
+
+  .header2{
+      max-width: 250px;
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top: 20px;
   }
