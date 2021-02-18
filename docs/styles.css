@@ -23,15 +23,19 @@
     .subscribe{
         background-attachment:scroll;
     }
+
+    .header2{
+        margin-right: auto;
+    }
 }
-  /* Masonry on desktop */
-  @media only screen and (min-width:600px) {
+  /* Masonry on tablet */
+  @media only screen and (min-width:600px) and (max-width: 899px) {
 
   .masonry {
       column-count: 4;
     }
     .shortcut{
-        width:22%;
+        width:40%;
   }
     .recipe{
         width:75%;
@@ -50,7 +54,46 @@
     .subscribe{
         background-attachment: fixed;
     }
+    .header2{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
+  /* Masonry on desktop */
+  @media only screen and (min-width:900px) {
+
+    .masonry {
+        column-count: 4;
+      }
+      .shortcut{
+          width:22%;
+    }
+      .recipe{
+          width:75%;
+      }
+      .primary{
+  
+          font-size: 20pt;
+          margin-bottom: 150px;
+  
+      }
+      .blogpost{
+          width:50%;
+          margin-left:120px;
+          margin-right: 40px;
+      }
+      .subscribe{
+          background-attachment: fixed;
+      }
+      .header2{
+          margin-right: auto;
+          margin-left: auto;
+      }
+  
+  }
+
+
 
 .text-primary{
     color:white !important;
@@ -339,7 +382,6 @@ input{
   .header2{
       max-width: 250px;
       display: block;
-      margin-left:auto;
-      margin-right:auto;
+
       margin-top: 20px;
   }
