@@ -1,6 +1,10 @@
 var db = firebase.firestore();
-db.collection("users").add({
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
-})
+
+function storeData(){
+    db.collection("users").doc().set({
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815
+    });
+    
+}
