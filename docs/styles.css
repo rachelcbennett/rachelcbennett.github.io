@@ -385,3 +385,19 @@ input{
 
       margin-top: 20px;
   }
+
+  .commenter{
+   
+  }
+
+  .comment_form{
+      float:left;
+  }
+
+  .someclass{
+      height:100px;
+      width:300px;
+  }
+  hr{
+      width:100%
+  }
