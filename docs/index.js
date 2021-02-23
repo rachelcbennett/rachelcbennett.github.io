@@ -26,7 +26,7 @@ function storeComment(){
         comment: comment_input
     })
     .then(() => {
-        console.log("Document written with ID: ", docRef.id);
+        console.log("Document written with ID: ", email_input);
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
