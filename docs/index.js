@@ -17,9 +17,7 @@ function storeData(){
 
 function storeComment(){
     console.log("entered storecomment")
-    var commenter_name = document.getElementById("nameInput").value;
-    var commenter_email = document.getElementById("emailInput").value;
-    var commenter_comment= document.getElementById("commentInput").value;
+ 
     console.log(commenter_name)
     db.collection("comments").add({
         name: "herro",
