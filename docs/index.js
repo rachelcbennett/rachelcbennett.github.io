@@ -15,13 +15,17 @@ function storeData(){
 
 }
 
+
+
 function storeComment(){
-    console.log("entered storecomment")
-    db.collection("comments").add({
-        name: "herro",
-        comment: "herro there"
+    comment_input = document.getElementById("commentInput").value;
+    name_input = document.getElementById("nameInput").value;
+    email_input = document.getElementById("emailInput").value;
+    db.collection("comments").doc(email_input).set({
+        name: name_input,
+        comment: comment_input
     })
-    .then((docRef) => {
+    .then(() => {
         console.log("Document written with ID: ", docRef.id);
     })
     .catch((error) => {
