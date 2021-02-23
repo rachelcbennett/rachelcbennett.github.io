@@ -21,7 +21,7 @@ function storeComment(){
     var commenter_email = document.getElementById("emailInput").value;
     var commenter_comment= document.getElementById("commentInput").value;
     console.log(commenter_name)
-    db.collection("comments").doc("new-id").set({
+    db.collection("comments").add({
         name: "herro",
         comment: "herro there"
     })
