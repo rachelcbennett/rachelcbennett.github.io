@@ -180,7 +180,7 @@ h2{
 
 /* Menu */
 .bg-dark {
-    background-color: #6e0d0d !important;
+    background-color: #921313 !important;
     background:transparent impor !important;
   }
 
@@ -399,5 +399,14 @@ input{
       width:300px;
   }
   hr{
-      width:100%
+      width:100%;
+    border: none;
+
+    height: 1px;
+    display: block;
+    content: " ";
+    background: repeating-linear-gradient(to right, rgba(0,0,0,0.5) 0,
+        rgba(0,0,0,0.5) 1px, rgba(255,255,255,0) 1px,
+        rgba(255,255,255,0) 2px);
+
   }
