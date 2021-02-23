@@ -316,8 +316,8 @@ input{
 /* Masonry*/
 
 .masonry{
-    margin-left: 5%;
-    margin-right:5%;
+   
+    
     column-gap: 1em;
 }
 
@@ -329,10 +329,10 @@ input{
 
     padding:20px;
     width: 100%;
-    opacity:95%
+    opacity:100%
 }
 .item:hover{
-    opacity: 100%;
+    opacity: 80%;
 }
 
 
@@ -412,9 +412,9 @@ input{
   }
 
 
-  .experiment{
+  .sing_shortcut{
     width:100%;
-    height:100%;
+
       background-image: url(/images/sing_background.png);
       /*background-attachment: fixed;*/
       background-repeat: no-repeat;
@@ -422,6 +422,29 @@ input{
       background-size: cover;
       background-color: #ffffff;
     
+  }
+  .laksa_shortcut{
+    width:100%;
+    height:auto;
+    
+      background-image: url(/images/laksa_background.jpg);
+      /*background-attachment: fixed;*/
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #ffffff;
+  }
+
+  .thai_yellow_shortcut{
+    width:100%;
+    
+    
+      background-image: url(/images/thai_yellow_background.jpg);
+      /*background-attachment: fixed;*/
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #ffffff;
   }
 
   .small{
@@ -433,3 +456,4 @@ input{
 .small:hover{
     opacity:100%
 }
+
