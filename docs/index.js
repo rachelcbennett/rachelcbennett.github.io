@@ -17,8 +17,6 @@ function storeData(){
 
 function storeComment(){
     console.log("entered storecomment")
- 
-    console.log(commenter_name)
     db.collection("comments").add({
         name: "herro",
         comment: "herro there"
