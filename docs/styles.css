@@ -410,3 +410,26 @@ input{
         rgba(255,255,255,0) 2px);
 
   }
+
+
+  .experiment{
+    width:100%;
+    height:100%;
+      background-image: url(/images/sing_background.png);
+      /*background-attachment: fixed;*/
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #ffffff;
+    
+  }
+
+  .small{
+   
+      opacity:0%;
+
+  }
+
+.small:hover{
+    opacity:100%
+}
