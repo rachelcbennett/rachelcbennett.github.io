@@ -64,7 +64,7 @@
   @media only screen and (min-width:900px) {
 
     .masonry {
-        column-count: 4;
+        column-count: 3;
       }
       .shortcut{
           width:22%;
@@ -304,6 +304,8 @@ input{
     margin-left:auto;
     margin-right:auto;
     display:block;
+    border-radius: 50px;
+    background-color: aquamarine;
 
 }
 
@@ -333,7 +335,7 @@ input{
     opacity:100%
 }
 .item:hover{
-    opacity: 80%;
+    opacity: 100%;
 }
 
 
@@ -462,4 +464,12 @@ input{
 
     width:30px;
     height:30px;
+}
+
+button{
+    border-radius: 50px;
+}
+
+.blog_ad{
+    width:100%
 }

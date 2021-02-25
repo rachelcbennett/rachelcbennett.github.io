@@ -32,3 +32,12 @@ function storeComment(){
         console.error("Error adding document: ", error);
     });
 }
+
+
+function getComments(){
+    db.collection("Users").get().then(function(querySnapshot){
+        querySnapshot.forEach(function(doc){
+            //list_div.innerHTML += "<div> doc.data().name </div"
+        })
+    })
+}
