@@ -8,7 +8,7 @@
         width:100%;
     }
     .recipe{
-        width:75%;
+        width:90%;
     }
 
     .primary{
@@ -27,6 +27,10 @@
     .header2{
         margin-right: auto;
     }
+
+    .sidenav{
+        width:100%
+    }
 }
   /* Masonry on tablet */
   @media only screen and (min-width:600px) and (max-width: 899px) {
@@ -38,7 +42,7 @@
         width:40%;
   }
     .recipe{
-        width:75%;
+        width:90%;
     }
     .primary{
 
@@ -47,9 +51,8 @@
 
     }
     .blogpost{
-        width:50%;
-        margin-left:120px;
-        margin-right: 40px;
+        width:100%;
+       
     }
     .subscribe{
         background-attachment: fixed;
@@ -57,6 +60,10 @@
     .header2{
         margin-right: auto;
         margin-left: auto;
+    }
+    
+    .sidenav{
+        width:100%;
     }
 
 }
@@ -70,7 +77,7 @@
           width:22%;
     }
       .recipe{
-          width:75%;
+          width:90%;
       }
       .primary{
   
@@ -89,6 +96,10 @@
       .header2{
           margin-right: auto;
           margin-left: auto;
+      }
+
+      .sidenav{
+        width: 25%;
       }
   
   }
@@ -352,7 +363,7 @@ input{
   
   .sidenav {
     
-    width: 25%;
+    
     
     z-index: 1;
     top: 0;
@@ -472,4 +483,17 @@ button{
 
 .blog_ad{
     width:100%
+}
+
+.center{
+    text-align: center;
+}
+
+.prof_pic{
+    width:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0px;
+
 }
