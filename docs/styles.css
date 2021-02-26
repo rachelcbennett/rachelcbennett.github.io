@@ -120,7 +120,7 @@
     position:relative;
     z-index: 1;
     background-color:rgb(255, 255, 255);
-    opacity: 95%;
+    opacity: 100%;
     border-radius: 5px;
 
 }   
@@ -168,7 +168,7 @@ h2{
     /*position:fixed;*/
     min-height: 65px;
     width:100%;
-    opacity: 95%;
+    opacity: 100%;
     z-index: 2;
     font-weight:bold;
     border-radius: 5px ;
@@ -496,4 +496,19 @@ button{
     margin-right:auto;
     padding:0px;
 
+}
+
+.contact{
+    text-align:center;
+    background-color:rgb(255, 251, 251);
+   
+}
+
+.blog_shortcut{
+    width:80%;
+   border-radius: 100%;
+}
+
+.intro{
+    height:600px;
 }
