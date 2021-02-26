@@ -177,7 +177,7 @@ h2{
 .nav-link{
     margin:2px;
     padding:2px;
-    font-size:larger;
+    font-size:xx-large;
 }
 
 
@@ -511,4 +511,8 @@ button{
 
 .intro{
     height:600px;
+}
+
+*{
+    font-family: 'Amatic SC', cursive;;
 }
