@@ -17,6 +17,11 @@
     </head>
 
 
+  
+    <li>
+        <a href="https://pinterest.com"><img class="media-icon" src="/images/PinterestLogo.png"></a>
+    </li>
+    <hr>
     <body>
         <nav class="navbar navbar-light bg-light justify-content-between">
             <a href ="/index.html"><img class = "logo" src = "/images/recipe2.png"></a>
@@ -43,11 +48,9 @@
                   <a class="nav-link" href="/pages/recipes.html"><div class = "text-primary">Recipes</div></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/about.html">About</a>
+                  <a class="nav-link" href="/pages/about.html"><div class = "text-primary">About</div></a>
                 </li>
-                <li>
-                    <a href="https://pinterest.com"><img class="media-icon" src="/images/PinterestLogo.png"></a>
-                </li>
+                
               </ul>
              
             </div>
@@ -60,7 +63,7 @@
             <img class="blog_shortcut" src="/images/sing_background_round.png">
             <h2>Singapore Rice Noodles</h2>
             <p>These rice noodles are spicy, flavorful, and colorful. My mom spent years perfecting this recipe, and now I am going to share it with you!</p>
-            <a href="/pages/singricenoodles.html">Continue Reading...</a>
+            <p><a href="/pages/singricenoodles.html">Continue Reading...</a></p>
         </div>
     </div>
 
@@ -134,12 +137,16 @@
                 <div class= "comment_form">
 
                         <label>Comment*</label>
-                        <input class="someclass" id="commentInput" type="text"></input><br/>
+                        <input class="comment-input" id="commentInput" type="text"></input>
+                        <br>
 
                         <label>Name*</label> 
-                        <input id="nameInput" type="text"></input><br/>
+                        <input class = "name-input" id="nameInput" type="text"></input>
+                        <br>
                         <label>Email*</label>
-                        <input id="emailInput" type="text"></input><br>
+
+                        <input class = "name-input" id="emailInput" type="text"></input>
+                        <br>
                         <button onclick="storeComment();">Submit</button>
                 </div>
 

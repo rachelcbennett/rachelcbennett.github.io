@@ -252,7 +252,7 @@ body{
 }
 
 #author{
-    font-size: small;
+    font-size:large;
 }
 p{
     padding-left: 30px;
@@ -315,10 +315,12 @@ input{
     margin-left:auto;
     margin-right:auto;
     display:block;
-    border-radius: 50px;
-    background-color: aquamarine;
+    border-radius: 8px;
+    background-color: rgb(255, 251, 251);
+
 
 }
+
 
 
 .space{
@@ -401,17 +403,15 @@ input{
   }
 
   .commenter{
-   
+   float:left;
+   margin-left:40px;
   }
 
   .comment_form{
       float:left;
   }
 
-  .someclass{
-      height:100px;
-      width:300px;
-  }
+ 
   hr{
       width:100%;
     border: none;
@@ -472,9 +472,10 @@ input{
 }
 
 .media-icon{
-
+    margin-left:1000px;
     width:30px;
-    height:30px;
+    float:right;
+    height:100%
 }
 
 button{
@@ -514,5 +515,28 @@ button{
 }
 
 *{
-    font-family: 'Amatic SC', cursive;;
+    font-family: 'Amatic SC', cursive;
+}
+p{
+    font-family:'Josefin Slab', sans;
+}
+
+#commentInput{
+    
+    height:100px;
+    width:300px;
+}
+
+
+#nameInput{
+
+   width:300px;
+}
+#emailInput{
+    width:300px;
+
+}
+
+label{
+
 }
