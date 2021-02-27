@@ -22,7 +22,9 @@ function GetComments(){
         querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             console.log(doc.id, " => ", doc.data());
+            
             results += "<div class='container comment'>";
+            
             results+="<h3>"
             results+=doc.data().name;
             results+= " says:";
@@ -36,6 +38,6 @@ function GetComments(){
             results+="<div class='space'> </div>"
             
         });
-        document.getElementById("html_comments").innerHTML = results; //change for textcontent
+        document.getElementById("html_comments").textContent = results; //change for textcontent
     });
 }

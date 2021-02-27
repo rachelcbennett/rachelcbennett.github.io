@@ -26,6 +26,7 @@ function storeComment(){
     let Month = currentDate.getMonth() + 1
     let Year = currentDate.getFullYear()
     let curr_date = Month + "/" + Day +"/" + Year
+    
 
 
 
@@ -36,8 +37,22 @@ function storeComment(){
         date: curr_date
     })
     .then(() => {
-        alert("Success!");
         console.log("Document written with ID: ", email_input);
+        results = "<h3> This comment is pending! It should appear within the next few days. :)</h3>"
+        results += "<div class='container comment'>";
+        results+="<h3>"
+        results+=name_input
+        results+= " says:";
+        results+="</h3>"
+        results+="<br>";
+        results+comment_input;
+        results+="<br>"
+        results+=curr_date
+        
+        results+="</div>"
+        results+="<div class='space'> </div>"
+
+        document.getElementById("tempComment").innerHTML = results
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
