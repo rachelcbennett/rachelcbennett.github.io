@@ -31,6 +31,10 @@
     .sidenav{
         width:100%
     }
+
+    .small{
+        opacity:100%;
+    }
 }
   /* Masonry on tablet */
   @media only screen and (min-width:600px) and (max-width: 899px) {
@@ -65,7 +69,9 @@
     .sidenav{
         width:100%;
     }
-
+    .small{
+        opacity:0%;
+    }
 }
   /* Masonry on desktop */
   @media only screen and (min-width:900px) {
@@ -101,6 +107,10 @@
       .sidenav{
         width: 25%;
       }
+
+      .small{
+        opacity:0%;
+    }
   
   }
 
@@ -345,7 +355,7 @@ input{
 
     padding:20px;
     width: 100%;
-    opacity:100%
+
 }
 .item:hover{
     opacity: 100%;
@@ -364,9 +374,6 @@ input{
   }
   
   .sidenav {
-    
-    
-    
     z-index: 1;
     top: 0;
     right:0;
@@ -437,6 +444,18 @@ input{
       background-color: #ffffff;
     
   }
+
+  .sweetnsour_shortcut{
+    width:100%;
+
+      background-image: url(/images/sweetnsour_background.jpg);
+      /*background-attachment: fixed;*/
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #ffffff;
+    
+  }
   .laksa_shortcut{
     width:100%;
     height:auto;
@@ -461,11 +480,12 @@ input{
       background-color: #ffffff;
   }
 
+  /*
   .small{
    
       opacity:0%;
 
-  }
+  }*/
 
 .small:hover{
     opacity:100%
@@ -479,7 +499,7 @@ input{
 }
 
 button{
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .blog_ad{
@@ -539,4 +559,10 @@ p{
 
 label{
 
+}
+
+.comment{
+    background-color:rgb(255, 251, 251);
+    font-family:'Josefin Slab', sans;
+    padding:15px;
 }
