@@ -45,7 +45,7 @@ function storeComment(){
         results+= " says:";
         results+="</h3>"
         results+="<br>";
-        results+comment_input;
+        results+=comment_input;
         results+="<br>"
         results+=curr_date
         

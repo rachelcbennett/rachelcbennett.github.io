@@ -18,6 +18,7 @@
 
     .blogpost{
         width:100%;
+
     }
 
     .subscribe{
@@ -267,6 +268,7 @@ body{
 p{
     padding-left: 30px;
     padding-right: 30px;
+    font-size:larger;
 }
 
 .recipe{
@@ -327,6 +329,7 @@ input{
     display:block;
     border-radius: 8px;
     background-color: rgb(255, 251, 251);
+    font-family: 'Josefin Slab',sans;
 
 
 }
@@ -565,4 +568,18 @@ label{
     background-color:rgb(255, 251, 251);
     font-family:'Josefin Slab', sans;
     padding:15px;
+}
+
+.large-text{
+    font-size:12mm;
+}
+
+
+
+.left{
+    float: left;
+}
+
+#tempComment{
+    float:left;
 }
