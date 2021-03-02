@@ -483,13 +483,6 @@ input{
       background-color: #ffffff;
   }
 
-  /*
-  .small{
-   
-      opacity:0%;
-
-  }*/
-
 .small:hover{
     opacity:100%
 }
