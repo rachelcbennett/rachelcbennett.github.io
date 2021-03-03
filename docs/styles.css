@@ -36,6 +36,14 @@
     .small{
         opacity:100%;
     }
+
+    .contact{
+        width:100%
+    }
+
+    .josefin{
+        font-size:large;
+    }
 }
   /* Masonry on tablet */
   @media only screen and (min-width:600px) and (max-width: 899px) {
@@ -72,6 +80,9 @@
     }
     .small{
         opacity:0%;
+    }
+    .josefin{
+        font-size:larger;
     }
 }
   /* Masonry on desktop */
@@ -111,6 +122,9 @@
 
       .small{
         opacity:0%;
+    }
+    .josefin{
+        font-size:xx-large;
     }
   
   }
@@ -561,7 +575,7 @@ label{
 
 .comment{
     background-color:rgb(255, 251, 251);
-    font-family:'Josefin Slab', sans;
+    
     padding:15px;
 }
 
@@ -577,4 +591,14 @@ label{
 
 #tempComment{
     float:left;
+}
+
+.josefin{
+    font-family:'Josefin Slab', sans;
+    
+}
+
+#thankyou{
+    color:white;
+    font-weight:bold;
 }

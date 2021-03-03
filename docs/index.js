@@ -1,13 +1,25 @@
 var db = firebase.firestore();
 
-function storeData(){
-    db.collection("users").add({
-        first: "Ada",
-        last: "Lovelace",
-        born: 1815
+function subscribeEmail(){
+    let currentDate = new Date();
+    let Day = currentDate.getDate()
+    let Month = currentDate.getMonth() + 1
+    let Year = currentDate.getFullYear()
+    let curr_date = Month + "/" + Day +"/" + Year
+
+    var subscriberName = document.getElementById('mailNameInput').value;
+    var subscriberEmail = document.getElementById('mailEmailInput').value;
+    if (subscriberName ==='' || subscriberEmail ===''){
+        return;
+    }
+    db.collection("emailList").doc(subscriberEmail).set({
+        subscriber_name: subscriberName,
+        subscriber_email: subscriberEmail,
+        date_subscribed: curr_date
     })
     .then((docRef) => {
-        console.log("Document written with ID: ", docRef.id);
+        console.log("Document written");
+        document.getElementById('thankyou').innerHTML = '<p> Thanks for Subscribing! You should get a confirmation email in the next day or so. We send about one email a week and you can unsubscribe at any time.</p>'
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
@@ -60,10 +72,11 @@ function storeComment(){
 }
 
 
+/*
 function getComments(){
     db.collection("Users").get().then(function(querySnapshot){
         querySnapshot.forEach(function(doc){
             //list_div.innerHTML += "<div> doc.data().name </div"
         })
     })
-}
+}*/

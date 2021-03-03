@@ -19,7 +19,9 @@
 
   
     <li>
+        <a href="https://pinterest.com"><img class="media-icon" src="/images/githublogo.png"></a>
         <a href="https://pinterest.com"><img class="media-icon" src="/images/PinterestLogo.png"></a>
+        
     </li>
     <hr>
     <body>
@@ -120,13 +122,13 @@
             <div class="subscribe">
                 <div class = "mail">
                     <h1> Join our free Mailing List!</h2>
-                        Name:<input type = "text">
+                        Name:<input id= 'mailNameInput' type = "text">
                         <br>
-                        Email:<input type = "text">
+                        Email:<input id= 'mailEmailInput' type = "text">
                         <div class = "space"></div>
-                        <button onclick="storeData();">Submit</button>
+                        <button onclick="subscribeEmail();">Submit</button>
                 </div>
-    
+                <div id='thankyou'><p>We send about one email a week. Feel free to unsubscribe at any time.<p></div>
             </div>
             
 
