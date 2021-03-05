@@ -217,7 +217,9 @@ h2{
 }
 
 
-
+li{
+    font-family: 'Josefin slab', sans;
+}
 
 
 
@@ -395,7 +397,7 @@ input{
 
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    /*padding: 6px 8px 6px 16px;*/
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -411,7 +413,7 @@ input{
     overflow-x: hidden;
     padding-top: 20px;
     float:left;
-    margin:40px;
+    margin:10px;
     display:block;
   }
 
@@ -616,3 +618,6 @@ label{
     font-weight:bold;
 }
 
+a{
+    font-family:'Josefin Slab', sans;
+}
