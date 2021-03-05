@@ -47,6 +47,14 @@
     #recipe_index{
         width:100%
     }
+    .latest_recipe{
+        padding-left:10px;
+        width:100%
+        
+    }
+    .container2{
+        height:1250px;
+    }
 }
   /* Masonry on tablet */
   @media only screen and (min-width:600px) and (max-width: 899px) {
@@ -90,6 +98,14 @@
 
     #recipe_index{
         width:100%
+    }
+
+    .latest_recipe{
+        padding-left:10px;
+        width:100%
+    }
+    .container2{
+        height:1200px;
     }
 }
   /* Masonry on desktop */
@@ -137,6 +153,15 @@
     #recipe_index{
         width:60%
     }
+
+    .latest_recipe{
+        padding-left:200px;
+        width:70%;
+        
+    }
+    .container2{
+        height:750px;
+    }
   
   }
 
@@ -158,8 +183,39 @@
     background-color:rgb(255, 255, 255);
     opacity: 100%;
     border-radius: 5px;
+    
 
+    
 }   
+.container2{
+
+    width:100%;
+    position:relative;
+    z-index: 1;
+    background-color:rgb(255, 255, 255);
+    opacity: 100%;
+    border-radius: 5px;
+
+    
+
+    
+}  
+
+.latest_recipe{
+  
+    
+  
+    position:relative;
+    z-index: 1;
+    background-color:rgb(255, 255, 255);
+    opacity: 100%;
+    border-radius: 5px;
+    float:left;
+    
+    
+    overflow-x: hidden;
+
+}
 
 
 
