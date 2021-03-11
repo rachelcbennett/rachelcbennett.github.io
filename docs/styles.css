@@ -186,6 +186,12 @@
     background-color:rgb(255, 255, 255);
     opacity: 100%;
     border-radius: 5px;
+    background-image: url('/images/preliminaryleaf.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #ffffff;
     
 
     
@@ -332,12 +338,13 @@ body{
     min-height:100%;
     /* max-width:900px; */
     
-    /*background-image: url(/images/pizza.jpg);*/
+    background-image: url(/images/preliminaryleaf.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: #ffffff;
+
 
 }
 
