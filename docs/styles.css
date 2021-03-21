@@ -23,6 +23,8 @@
 
     .subscribe{
         background-attachment:scroll;
+        z-index: 0;
+        position:relative;
     }
 
     .header2{
@@ -52,8 +54,12 @@
         width:100%
         
     }
-    .container2{
-        height:1250px;
+    
+    .widget-pic{
+        width:100%;
+    }
+    .flex-row{
+        flex-direction: column;
     }
 }
   /* Masonry on tablet */
@@ -106,9 +112,11 @@
        padding-left:50px;
         width:100%
     }
-    .container2{
-        height: 1200px;
+    .widget-pic{
         width:100%;
+    }
+    .flex-row{
+        flex-direction: column;
     }
 }
   /* Masonry on desktop */
@@ -158,52 +166,65 @@
     }
 
     .latest_recipe{
-        padding-left:200px;
-        width:70%;
+        padding-left:50px;
+        width:100%;
         
     }
-    .container2{
-        height:750px;
+
+
+    .flex-row{
+        flex-direction: row;
     }
   
   }
 
-
+  * {
+    box-sizing: border-box;
+  }
 
 .text-primary{
-    color:white !important;
+    color: #222 !important;
 }
 
+.text-primary:hover{
+    color:rgb(255, 214, 80) !important;
+    transition-duration:.2s;
+}
 
 .square{
     background-color: whitesmoke;
 }
 .container{
-
     width:85%;
     position:relative;
     z-index: 1;
     background-color:rgb(255, 255, 255);
-    opacity: 100%;
+    opacity: 95%;
     border-radius: 5px;
-    /*background-image: url('/images/preliminaryleaf.png'); */
+    
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: #ffffff;
     
-
     
 }   
+
+
+
+
+
 .container2{
 
-    width:100%;
+    width:90%;
     position:relative;
     z-index: 1;
     background-color:rgb(255, 255, 255);
     opacity: 100%;
     border-radius: 5px;
+    margin-left:auto;
+    margin-right:auto;
 
     
 
@@ -219,10 +240,8 @@
     background-color:rgb(255, 255, 255);
     opacity: 100%;
     border-radius: 5px;
-    float:left;
-    
-    
-    overflow-x: hidden;
+    /*float:left;*/
+    height:100%;
 
 }
 
@@ -232,10 +251,6 @@
 hr{
     width:50%;
     float:right;
-}
-
-*{
-    font-family: 'Pavanam', sans-serif;
 }
 h2{
     font-weight:bold;
@@ -253,28 +268,27 @@ h2{
     margin-right:auto;
 
 }
-
-
 .shortcut{
-    
-    margin: 1%;
-    padding: 1%;
-    float:left;
+    margin-left:auto;
+    margin-right:auto;
 }
+
 .shortcut:hover{
-    padding:0px;
+    transform: scale(1.04);
+    transition-duration:1s;
 }
 
 .navbar{
     /*position:fixed;*/
-    min-height: 65px;
+    min-height: 40px;
     width:100%;
     opacity: 100%;
     z-index: 2;
     font-weight:bold;
     border-radius: 5px ;
-    color:white  !important;
+    color:white !important;
 }
+
 .nav-link{
     margin:2px;
     padding:2px;
@@ -293,10 +307,10 @@ li{
     padding:10px;
 }
 
-/* Menu */
+/* Menu  color used to be #921313 */
 .bg-dark {
-    background-color: #921313 !important;
-    background:transparent impor !important;
+    background-color: white !important; 
+   /* background:transparent !important;*/
   }
 
   .bg-light {
@@ -312,6 +326,8 @@ li{
 
 img {
     width:100%;
+    opacity:100%;
+    z-index: 10;
 }
 
 #about{
@@ -338,12 +354,13 @@ body{
     min-height:100%;
     /* max-width:900px; */
     
-    /*background-image: url(/images/preliminaryleaf.png);*/
+    background-image: url(/images/preliminaryleaf.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: #ffffff;
+    
 
 
 }
@@ -457,6 +474,7 @@ input{
 }
 .item:hover{
     opacity: 100%;
+
 }
 
 
@@ -579,16 +597,24 @@ input{
   }
 
 .small:hover{
-    opacity:100%
+    opacity:100%;
+    transition-duration:.4s;
 }
 
 .media-icon{
-    margin-left:1000px;
+
     width:30px;
-    float:right;
     height:100%;
-    margin:20px;
+    padding:2px;
+
     margin-bottom:0px;
+}
+.media-icon:hover{
+    transform:rotate(360deg);
+    transition-duration: 1s;
+}
+.media-icon:increment{
+
 }
 
 button{
@@ -612,6 +638,7 @@ button{
 
 }
 
+
 .contact{
     text-align:center;
     background-color:rgb(255, 251, 251);
@@ -619,8 +646,11 @@ button{
 }
 
 .blog_shortcut{
-    width:80%;
-   border-radius: 100%;
+    width:100%;
+    height:100%;
+
+   
+    
 }
 
 .intro{
@@ -687,3 +717,66 @@ label{
 a{
     font-family:'Josefin Slab', sans;
 }
+
+.media-widget{
+    width:30px;
+    height:100px;
+    position:fixed;
+    top:50%;
+    left:0px;
+    
+    background-color: rgb(59, 59, 59);
+    z-index: 10;
+}
+
+
+.zoom-within-container {
+    /* [1.1] Set it as per your need */
+    /*overflow: hidden; *//* [1.2] Hide the overflowing of child elements */
+}
+  .zoom-within-container img {
+    box-shadow: 3px 4px 10px lightgray ;
+    transition: transform 2s ease;
+    z-index:3;
+    position:relative;
+    display:flexbox;
+    
+
+  }
+  .zoom-within-container:hover img {
+    transform: scale(1.04);
+  }
+
+  .widget-pic{
+      /*
+      position: absolute;
+
+      left: 100px;*/
+      
+      
+      
+
+  }
+  .widget-background{
+      /*
+      position:relative;
+      top: 50px;
+      left:25px;*/
+      
+
+      
+      height: 100%;
+      z-index:0;
+  }
+
+  a:hover{
+      color:rgb(247, 205, 22);
+      transition-duration: 0.5s;
+  }
+
+  .flex-row{
+      display:flex;
+      flex-wrap:nowrap;
+      justify-content: center;
+      
+  }
