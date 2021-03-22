@@ -61,6 +61,10 @@
     .flex-row{
         flex-direction: column;
     }
+    .media-widget{
+        width:0;
+        height:0;
+    }
 }
   /* Masonry on tablet */
   @media only screen and (min-width:600px) and (max-width: 899px) {
@@ -118,9 +122,19 @@
     .flex-row{
         flex-direction: column;
     }
+
+    .media-widget{
+        width:0px;
+        height:0px;
+    }
 }
   /* Masonry on desktop */
   @media only screen and (min-width:900px) {
+
+    .media-widget{
+        width:30px;
+        height:100px;
+    }
 
     .masonry {
         column-count: 3;
@@ -605,7 +619,7 @@ input{
 
     width:30px;
     height:100%;
-    /*padding:2px;*/
+    padding-top:2px;
 
     margin-bottom:0px;
 }
@@ -719,8 +733,7 @@ a{
 }
 
 .media-widget{
-    width:30px;
-    height:100px;
+    
     position:fixed;
     top:50%;
     left:0px;
@@ -789,7 +802,7 @@ a{
   }
 
   .media-icons{
-    list-style-type: none;
+    
     margin:0;
     padding:0;
   }
