@@ -733,6 +733,8 @@ a{
 .zoom-within-container {
     /* [1.1] Set it as per your need */
     /*overflow: hidden; *//* [1.2] Hide the overflowing of child elements */
+
+    flex-grow:8;
 }
   .zoom-within-container img {
     box-shadow: 3px 4px 10px lightgray ;
@@ -741,13 +743,19 @@ a{
     position:relative;
     display:flexbox;
     
+    
 
   }
   .zoom-within-container:hover img {
     transform: scale(1.04);
   }
 
+  .widget-description{
+ 
+      flex-grow:1;
+  }
   .widget-pic{
+      
       /*
       position: absolute;
 
@@ -762,8 +770,7 @@ a{
       position:relative;
       top: 50px;
       left:25px;*/
-      
-
+    
       
       height: 100%;
       z-index:0;
