@@ -605,7 +605,7 @@ input{
 
     width:30px;
     height:100%;
-    padding:2px;
+    /*padding:2px;*/
 
     margin-bottom:0px;
 }
@@ -786,4 +786,10 @@ a{
       flex-wrap:nowrap;
       justify-content: center;
       
+  }
+
+  .media-icons{
+    list-style-type: none;
+    margin:0;
+    padding:0;
   }
