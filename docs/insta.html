@@ -65,7 +65,8 @@ window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
     
     
     function closeMenu() 
-    {  try {
+    {  console.log("toggle the close");
+        try {
         if (this.$refs["menu"].classList.contains('open')) {
             this.toggleMenu();
         }
@@ -82,6 +83,7 @@ window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
         
     }
     function toggleMenu(){
+        console.log("toggle the menu")
         this.$refs["can"].classList.toggle('pure-menu-horizontal');
         
         if (this.$refs["menu"].classList.contains('open')) {
