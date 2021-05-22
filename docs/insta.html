@@ -63,9 +63,10 @@
     
     
     function closeMenu() 
-    {  console.log("toggle the close");
+    {  
+        console.log("toggle the close");
         try {
-        if (this.$refs["menu"].classList.contains('open')) {
+        if (document.getElementById('menu').classList.contains('open')) {
             this.toggleMenu();
         }
         }
@@ -74,23 +75,23 @@
         }
     }
     function toggleHorizontal() {
-        if (this.$refs["menu"].classList.contains('open')){
-            this.$refs["menu"].classList.remove('closing');
-            this.$refs["can"].classList.toggle('pure-menu-horizontal');
+        if (document.getElementById('menu').classList.contains('open')){
+            document.getElementById('menu').classList.remove('closing');
+            document.getElementById('can').classList.toggle('pure-menu-horizontal');
         }
         
     }
     function toggleMenu(){
         console.log("toggle the menu")
-        this.$refs["can"].classList.toggle('pure-menu-horizontal');
+        document.getElementById('can').classList.toggle('pure-menu-horizontal');
         
-        if (this.$refs["menu"].classList.contains('open')) {
-            this.$refs["menu"].classList.add('closing');
+        if (document.getElementById('menu').classList.contains('open')) {
+            document.getElementById('menu').classList.add('closing');
             //..rollBack = setTimeout(this.toggleHorizontal, 200);
         }
     
-        this.$refs["menu"].classList.toggle('open');
-        this.$refs["toggle"].classList.toggle('x');
+        document.getElementById('menu').classList.toggle('open');
+        document.getElementById('menu').classList.toggle('x');
     }
     
     </script>        
