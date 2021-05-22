@@ -1,4 +1,4 @@
-
+<script>
 
 window.addEventListener("resize", this.closeMenu);
 
@@ -32,3 +32,4 @@ function toggleMenu(){
     this.$refs["toggle"].classList.toggle('x');
 }
 
+</script>
