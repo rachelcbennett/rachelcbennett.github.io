@@ -148,8 +148,8 @@ html, body {padding:0; margin:0; height:100%;}
     transition-duration: .8s;
 }
 .fake-button{
-    height:30px;
-    width:150px;
+    height:40px;
+    width:200px;
     background-color:rgb(112, 158, 112);
     display: inline-block;
     color:white;
