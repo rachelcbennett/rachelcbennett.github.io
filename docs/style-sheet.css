@@ -19,6 +19,9 @@
     .pure-u-1{
     height:50px;
     }
+    .welcome{
+        width:80%;
+    }
 }
 
 /* Masonry on tablet */
@@ -40,6 +43,10 @@
     }
     .pure-u-1{
     height:50px;
+}
+
+.welcome{
+    width:80%;
 }
 }
 
@@ -63,6 +70,10 @@
     }
     .logo-line{
         height:0px;
+    }
+
+    .welcome{
+        width:30%;
     }
 }
 
@@ -419,6 +430,8 @@ a{
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.46);
     backface-visibility: hidden;*/
 }
+
+
 
 .lower-head{
     background-color:rgb(112, 158, 112);
