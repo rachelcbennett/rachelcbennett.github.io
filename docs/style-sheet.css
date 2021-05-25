@@ -436,7 +436,7 @@ html{
 }
 
 button{
-    background-color: turquoise;
+    background-color: lightgray;
     position: relative;
     z-index: 15;
 }
