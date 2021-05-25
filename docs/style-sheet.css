@@ -381,6 +381,7 @@ input {
  .router-lnk{
     text-decoration: none !important;
     font-size: x-large;
+    margin:10px;
 
 }
 
