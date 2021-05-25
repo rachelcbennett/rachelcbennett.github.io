@@ -478,3 +478,6 @@ button{
     position: relative;
     z-index: 15;
 }
+.welcome img{
+    width: 70%;
+}
