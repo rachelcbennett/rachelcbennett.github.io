@@ -101,7 +101,7 @@ img{
   
 }
 html{
-    overflow:scroll;
+   height:100%;
 }
 
 #nav {
