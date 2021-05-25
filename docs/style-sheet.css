@@ -147,7 +147,11 @@ html, body {padding:0; margin:0; height:100%;}
     transform:rotate(360deg);
     transition-duration: .8s;
 }
-
+.fake-button{
+    height:30px;
+    width:150px;
+    background-color:gray;
+}
 .pure-menu-item{
     margin:10px;
     margin-right:20px;
